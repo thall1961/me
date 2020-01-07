@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `My Blog`,
+    author: `Tom Hall`,
+    description: `Writings about what I learn to help you and me learn.`,
+    siteUrl: `https://hallwtom.com/`,
+    city: `Salt Lake City`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `thall1961`,
     },
+  },
+  colors: {
+    lightBlue: `#88bdbc`,
+    darkBlue: `#254e58`,
+    dark: `#112d32`,
+    darkBrown: `#4f4a41`,
+    brown: `#6e6658`,
   },
   plugins: [
     {
@@ -61,7 +69,7 @@ module.exports = {
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#88bdbc`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
