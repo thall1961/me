@@ -6,6 +6,9 @@ description: "You're getting this error -Selenium::WebDriver::Error::WebDriverEr
 
 If you're getting this error `Selenium::WebDriver::Error::WebDriverError`, it's probably because you have the chromedriver-helper gem installed.
 
+Or maybe you saw this notice in your terminal or command prompt:
+![terminal notice](./terminal-warning.jpg)
+
 This is what I had in my gemfile in the test section:
 ![chromedriver-helper gem](./chromedriverhelper.jpg)
 
