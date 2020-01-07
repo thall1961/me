@@ -3,6 +3,14 @@ import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
 
+export let colors = {
+  lightBlue: `#88bdbc`,
+  darkBlue: `#254e58`,
+  dark: `#112d32`,
+  darkBrown: `#4f4a41`,
+  brown: `#6e6658`,
+}
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props

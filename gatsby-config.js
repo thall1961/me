@@ -9,13 +9,6 @@ module.exports = {
       twitter: `thall1961`,
     },
   },
-  colors: {
-    lightBlue: `#88bdbc`,
-    darkBlue: `#254e58`,
-    dark: `#112d32`,
-    darkBrown: `#4f4a41`,
-    brown: `#6e6658`,
-  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
