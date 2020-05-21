@@ -1,0 +1,31 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "eslint-config-prettier"
+    ],
+    "rules": {
+        "strict": ["error", "never"],
+        "valid-typeof": "error",
+        "no-unsafe-negation": "error",
+        "no-unexpected-multiline": "error",
+        "no-undef": "error",
+        "no-console": "error"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

@@ -1,6 +1,6 @@
 ---
 title: Selenium::WebDriver::Error::WebDriverError
-date: "2020-01-07T22:12:03.284Z"
+date: '2020-01-07T22:12:03.284Z'
 description: "You're getting this error -Selenium::WebDriver::Error::WebDriverError- because your using the chromedriver-helper gem."
 ---
 
