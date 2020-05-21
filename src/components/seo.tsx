@@ -6,11 +6,16 @@
  */
 
 import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import PropTypes, { InferProps } from 'prop-types'
+import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({
+    description,
+    lang,
+    meta,
+    title
+}: InferProps<typeof SEO.propTypes>) {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -80,8 +85,8 @@ SEO.defaultProps = {
 
 SEO.propTypes = {
     description: PropTypes.string,
-    lang: PropTypes.string,
-    meta: PropTypes.arrayOf(PropTypes.object),
+    lang: PropTypes.string.isRequired,
+    meta: PropTypes.array.isRequired,
     title: PropTypes.string.isRequired
 }
 
