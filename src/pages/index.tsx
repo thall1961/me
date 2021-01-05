@@ -24,7 +24,7 @@ function BlogIndex({ data, location }: InferProps<typeof BlogIndex.propTypes>) {
                                     marginBottom: rhythm(1 / 4)
                                 }}
                             >
-                                <a href="https://flybreeze.com?origin=PVU">CLICK ME</a>
+                                <a href="https://flybreeze.com?origin=PVU&destination=BNA&beginDate=02/01/2021&endDate=02/02/2021&oneway=false">CLICK ME</a>
                                 <Link
                                     style={{ boxShadow: `none` }}
                                     to={post.node.fields.slug}
