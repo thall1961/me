@@ -24,6 +24,7 @@ function BlogIndex({ data, location }: InferProps<typeof BlogIndex.propTypes>) {
                                     marginBottom: rhythm(1 / 4)
                                 }}
                             >
+                                <a href="https://flybreeze.com?origin=PVU">CLICK ME</a>
                                 <Link
                                     style={{ boxShadow: `none` }}
                                     to={post.node.fields.slug}
