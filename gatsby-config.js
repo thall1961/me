@@ -107,7 +107,6 @@ module.exports = {
             }
         },
         `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-typescript,`,
         {
             resolve: `gatsby-plugin-typography`,
             options: {
