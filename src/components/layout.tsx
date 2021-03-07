@@ -29,7 +29,7 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
         }}
         to={`/`}
       >
-        Dev Tips, Tutorials, and Training
+        Dev Tips
       </Link>
     </h1>
   )
@@ -49,13 +49,24 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
         }}
         to={`/`}
       >
-        Dev Tips, Tutorials, and Training
+        Dev Tips
       </Link>
     </h3>
   )
 
   const header = location.pathname === '/' ? homeHeader : otherHeader
   return (
+    <>
+    <div style={{
+        padding: `${rhythm(20)} 0`,
+      background: '#6200EA'
+      }}
+    >
+      <header style={{
+        marginLeft: `auto`,
+        marginRight: `auto`}}
+      >{header}</header>
+    </div>
     <div
       style={{
         marginLeft: `auto`,
@@ -64,10 +75,10 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
       }}
     >
-      <header>{header}</header>
       <main>{children}</main>
       <footer>© {new Date().getFullYear()}</footer>
     </div>
+    </>
   )
 }
 
