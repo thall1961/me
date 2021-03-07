@@ -38,7 +38,9 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginBottom: rhythm(2.5)
+        margin: `${rhythm(2.5)} auto`,
+        textAlign: 'center',
+        maxWidth: '500px'
       }}
     >
       <Image
@@ -55,8 +57,7 @@ const Bio = () => {
         }}
       />
       <p>
-        By <strong>{author}</strong> who lives and works in {city}{' '}
-        building useful things.
+        By <strong>{author}</strong>.
       </p>
     </div>
   )

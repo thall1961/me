@@ -18,7 +18,7 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
     <h1
       style={{
         ...scale(1.5),
-        marginBottom: rhythm(1.5),
+        marginBottom: '1rem',
         marginTop: 0
       }}
     >
@@ -69,7 +69,11 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
           marginRight: `auto`
         }}
         >{header}</header>
-        <p style={{textAlign: 'center'}}>Tips and tricks I have picked up along the years and things I want to learn
+        <p style={{
+          textAlign: 'center',
+          fontWeight: 'bold',
+          fontSize: '24px'
+        }}>Tips and tricks I have picked up along the years and things I want to learn
           better.</p>
         <Bio/>
       </div>
