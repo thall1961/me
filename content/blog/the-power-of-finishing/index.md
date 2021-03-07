@@ -1,6 +1,6 @@
 ---
 title: The Power Of Finishing...
-date: '2020-05-07T22:12:03.284Z'
+date: '2020-07-11T22:12:03.284Z'
 description: "...and the detriment of quitting too early."
 ---
 ![Finishing gives you power](finish.jpg)
