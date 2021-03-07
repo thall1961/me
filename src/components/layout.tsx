@@ -76,7 +76,7 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
           {subHeader}
           <Bio/>
         </div>
-        : <header>
+        : <header style={{ textAlign: 'center', padding: '10px 0' }}>
           {otherHeader}
         </header>}
       <div
