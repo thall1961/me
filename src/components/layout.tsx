@@ -66,15 +66,19 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
   }}>Tips and tricks I have picked up along the years.</p> : '';
   return (
     <>
-      <div className={'bkg'}>
-        <header style={{
-          marginLeft: `auto`,
-          marginRight: `auto`
-        }}
-        >{header}</header>
-        {subHeader}
-        <Bio/>
-      </div>
+      {isHome
+        ? <div className={'bkg'}>
+          <header style={{
+            marginLeft: `auto`,
+            marginRight: `auto`
+          }}
+          >{homeHeader}</header>
+          {subHeader}
+          <Bio/>
+        </div>
+        : <header>
+          {otherHeader}
+        </header>}
       <div
         style={{
           marginLeft: `auto`,
