@@ -1,17 +1,17 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import {graphql, Link} from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { rhythm, scale } from '../utils/typography'
+import {rhythm, scale} from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
     render() {
         const post = this.props.data.markdownRemark
         const siteTitle = this.props.data.site.siteMetadata.title
-        const { previous, next } = this.props.pageContext
+        const {previous, next} = this.props.pageContext
 
         return (
             <Layout location={this.props.location}>
@@ -39,14 +39,14 @@ class BlogPostTemplate extends React.Component {
                             {post.frontmatter.date}
                         </p>
                     </header>
-                    <section dangerouslySetInnerHTML={{ __html: post.html }} />
+                    <section dangerouslySetInnerHTML={{__html: post.html}}/>
                     <hr
                         style={{
                             marginBottom: rhythm(1)
                         }}
                     />
                     <footer>
-                        <Bio />
+                        <Bio/>
                     </footer>
                 </article>
 
