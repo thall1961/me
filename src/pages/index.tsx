@@ -2,7 +2,6 @@ import React from 'react'
 import {graphql, Link} from 'gatsby'
 import PropTypes, {InferProps} from 'prop-types'
 
-import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import {rhythm} from '../utils/typography'
@@ -12,7 +11,6 @@ function BlogIndex({data, location}: InferProps<typeof BlogIndex.propTypes>) {
   return (
     <Layout location={location}>
       <SEO title="All posts"/>
-      <Bio/>
       {posts.map((post: any) => {
         const title =
           post.node.frontmatter.title || post.node.fields.slug

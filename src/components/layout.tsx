@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import PropTypes, {InferProps, string} from 'prop-types'
 
 import {rhythm, scale} from '../utils/typography'
+import Bio from "./bio";
 
 export const colors = {
   lightBlue: `#88bdbc`,
@@ -58,7 +59,7 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
   return (
     <>
       <div style={{
-        padding: `${rhythm(10)} 0`,
+        padding: `${rhythm(7)} 0`,
         background: '#6200EA',
         textAlign: 'center'
       }}
@@ -68,6 +69,9 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
           marginRight: `auto`
         }}
         >{header}</header>
+        <p style={{textAlign: 'center'}}>Tips and tricks I have picked up along the years and things I want to learn
+          better.</p>
+        <Bio/>
       </div>
       <div
         style={{
