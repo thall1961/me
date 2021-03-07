@@ -5,6 +5,8 @@ import PropTypes, {InferProps, string} from 'prop-types'
 import {rhythm, scale} from '../utils/typography'
 import Bio from "./bio";
 
+import './bkg.css';
+
 export const colors = {
   lightBlue: `#88bdbc`,
   darkBlue: `#254e58`,
@@ -64,14 +66,7 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
   }}>Tips and tricks I have picked up along the years.</p> : '';
   return (
     <>
-      <div style={{
-        padding: `${rhythm(7)} 0`,
-        backgroundColor: '#8360c3',
-        background: 'linear-gradient(to right, #8360c3, #2ebf91)',
-        textAlign: 'center',
-        position: 'relative'
-      }}
-      >
+      <div className={'bkg'}>
         <header style={{
           marginLeft: `auto`,
           marginRight: `auto`

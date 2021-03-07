@@ -1,0 +1,14 @@
+.bkg {
+    padding: 40px 0;
+    background: #8360c3;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    text-align: center;
+    position: relative;
+
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {background-color: #8360c3;}
+    to {background-color: #2ebf91;}
+}
