@@ -61,7 +61,8 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
       <div style={{
         padding: `${rhythm(7)} 0`,
         background: '#6200EA',
-        textAlign: 'center'
+        textAlign: 'center',
+        position: 'relative'
       }}
       >
         <header style={{
@@ -73,8 +74,7 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
           textAlign: 'center',
           fontWeight: 'bold',
           fontSize: '24px'
-        }}>Tips and tricks I have picked up along the years and things I want to learn
-          better.</p>
+        }}>Tips and tricks I have picked up along the years.</p>
         <Bio/>
       </div>
       <div

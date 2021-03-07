@@ -37,7 +37,12 @@ const Bio = () => {
   return (
     <div
       style={{
+        position: 'absolute',
+        bottom: '0',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
         display: `flex`,
+        justifyContent: 'center',
         margin: `${rhythm(2.5)} auto`,
         textAlign: 'center',
         maxWidth: '500px'
