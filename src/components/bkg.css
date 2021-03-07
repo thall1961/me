@@ -13,18 +13,18 @@
 
 @keyframes backgroundColorPalette {
     0% {
-        background: #ee6055;
+        background: #cae7b9;
     }
     25% {
-        background: #60d394;
+        background: #f3de8a;
     }
     50% {
-        background: #aaf683;
+        background: #eb9486;
     }
     75% {
-        background: #ffd97d;
+        background: #7e7f9a;
     }
     100% {
-        background: #ff9b85;
+        background: #97a7b3;
     }
 }
