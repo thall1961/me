@@ -55,7 +55,13 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
     </h3>
   )
 
-  const header = location.pathname === '/' ? homeHeader : otherHeader
+  const isHome = location.pathname === '/';
+  const header = isHome ? homeHeader : otherHeader
+  const subHeader = isHome ? <p style={{
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: '24px'
+  }}>Tips and tricks I have picked up along the years.</p> : '';
   return (
     <>
       <div style={{
@@ -70,11 +76,7 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
           marginRight: `auto`
         }}
         >{header}</header>
-        <p style={{
-          textAlign: 'center',
-          fontWeight: 'bold',
-          fontSize: '24px'
-        }}>Tips and tricks I have picked up along the years.</p>
+        {subHeader}
         <Bio/>
       </div>
       <div
