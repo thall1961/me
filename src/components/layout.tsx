@@ -57,27 +57,29 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
   const header = location.pathname === '/' ? homeHeader : otherHeader
   return (
     <>
-    <div style={{
-        padding: `${rhythm(20)} 0`,
-      background: '#6200EA'
+      <div style={{
+        padding: `${rhythm(10)} 0`,
+        background: '#6200EA',
+        textAlign: 'center'
       }}
-    >
-      <header style={{
-        marginLeft: `auto`,
-        marginRight: `auto`}}
-      >{header}</header>
-    </div>
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-      }}
-    >
-      <main>{children}</main>
-      <footer>© {new Date().getFullYear()}</footer>
-    </div>
+      >
+        <header style={{
+          marginLeft: `auto`,
+          marginRight: `auto`
+        }}
+        >{header}</header>
+      </div>
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(24),
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
+        }}
+      >
+        <main>{children}</main>
+        <footer>© {new Date().getFullYear()}</footer>
+      </div>
     </>
   )
 }
