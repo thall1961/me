@@ -66,7 +66,8 @@ function Layout({location, children}: InferProps<typeof Layout.propTypes>) {
     <>
       <div style={{
         padding: `${rhythm(7)} 0`,
-        background: '#6200EA',
+        backgroundColor: '#8360c3',
+        background: 'linear-gradient(to right, #8360c3, #2ebf91)',
         textAlign: 'center',
         position: 'relative'
       }}
